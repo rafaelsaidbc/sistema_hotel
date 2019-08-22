@@ -125,7 +125,7 @@ class HOTEL_MANAGEMENT_checkin:
         self.Text2.place(relx=0.06, rely=0.16, relheight=0.8, relwidth=0.88)
         self.Text2.configure(background='white')
         self.Text2.configure(font=font17)
-        self.Text2.configure(foreground='#black')
+        self.Text2.configure(foreground='black')
         self.Text2.configure(highlightbackground='#d9d9d9')
         self.Text2.configure(highlightcolor='black')
         self.Text2.configure(insertbackground='black')

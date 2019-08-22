@@ -13,6 +13,28 @@ try:
 except ImportError:
     import tkinter.ttk as ttk
 
+    py3 = True
+
+
+# função para iniciar a janela/página checkin_gui_and_program.py
+def click_checkinn():
+    call(["python", "checkin_gui_and_program.py"])
+
+
+# função para iniciar a janela/página listgui.py
+def click_list():
+    call(["python", "listgui.py"])
+
+
+# função para iniciar a janela/página checkoutgui.py
+def click_checkout():
+    call(["python", "checkoutgui.py"])
+
+
+# função para iniciar a janela/página getinfoui.py
+def click_getinfo():
+    call(["python", "getinfoui.py"])
+
 
 # cria a classe principal
 class HOTEL_MANAGEMENT:
@@ -70,55 +92,60 @@ class HOTEL_MANAGEMENT:
         self.Button2.place(relx=0.17, rely=0.17, height=90, width=566)
         # activebackground muda a cor de fundo do botão ao clicar nele
         self.Button2.configure(activebackground='#d9d9d9')
-        self.Button2.configure(font=14)
+        self.Button2.configure(font=font14)
         self.Button2.configure(activeforeground='#000000')
         self.Button2.configure(background='cadetblue')
         self.Button2.configure(disabledforeground='#bfbfbf')
         self.Button2.configure(pady='0')
         self.Button2.configure(text='1 - Entrada')
         self.Button2.configure(width=566)
+        self.Button2.configure(command=click_checkinn)
 
         self.Button3 = Button(self.Frame1)
         self.Button3.place(relx=0.17, rely=0.33, height=90, width=566)
         # activebackground muda a cor de fundo do botão ao clicar nele
         self.Button3.configure(activebackground='#d9d9d9')
-        self.Button3.configure(font=14)
+        self.Button3.configure(font=font14)
         self.Button3.configure(activeforeground='#000000')
         self.Button3.configure(background='skyblue')
         self.Button3.configure(disabledforeground='#bfbfbf')
         self.Button3.configure(pady='0')
         self.Button3.configure(text='2 - Mostrar lista convidados')
         self.Button3.configure(width=566)
+        self.Button3.configure(command=click_list)
 
         self.Button4 = Button(self.Frame1)
         self.Button4.place(relx=0.17, rely=0.49, height=90, width=566)
         # activebackground muda a cor de fundo do botão ao clicar nele
         self.Button4.configure(activebackground='#d9d9d9')
-        self.Button4.configure(font=14)
+        self.Button4.configure(font=font14)
         self.Button4.configure(activeforeground='#000000')
         self.Button4.configure(background='rosybrown')
         self.Button4.configure(disabledforeground='#bfbfbf')
         self.Button4.configure(pady='0')
         self.Button4.configure(text='3 - Saída')
         self.Button4.configure(width=566)
+        self.Button4.configure(command=click_checkout)
+
 
         self.Button5 = Button(self.Frame1)
         self.Button5.place(relx=0.17, rely=0.65, height=90, width=566)
         # activebackground muda a cor de fundo do botão ao clicar nele
         self.Button5.configure(activebackground='#d9d9d9')
-        self.Button5.configure(font=14)
+        self.Button5.configure(font=font14)
         self.Button5.configure(activeforeground='#000000')
         self.Button5.configure(background='powderblue')
         self.Button5.configure(disabledforeground='#bfbfbf')
         self.Button5.configure(pady='0')
         self.Button5.configure(text='4 - Informações do convidado')
         self.Button5.configure(width=566)
+        self.Button5.configure(command=click_getinfo)
 
         self.Button6 = Button(self.Frame1)
-        self.Button6.place(relx=0.17, rely=0.80, height=90, width=566)
+        self.Button6.place(relx=0.17, rely=0.81, height=90, width=566)
         # activebackground muda a cor de fundo do botão ao clicar nele
         self.Button6.configure(activebackground='#d9d9d9')
-        self.Button6.configure(font=14)
+        self.Button6.configure(font=font14)
         self.Button6.configure(activeforeground='#000000')
         self.Button6.configure(background='lightcoral')
         self.Button6.configure(disabledforeground='#bfbfbf')
