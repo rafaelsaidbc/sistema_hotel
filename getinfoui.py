@@ -14,7 +14,6 @@ except ImportError:
     import tkinter.ttk as ttk
 
 
-# classe para fazer o checkout
 class New_Toplevel:
     def __init__(self):
         root = Tk()
@@ -32,7 +31,7 @@ class New_Toplevel:
                  'roman -underline 0 -overstrike 0'
 
         # font11
-        font23 = '-family {Segoe UI} -size 23 -weight normal -slant ' \
+        font23 = '-family {Segoe UI} -size 23 -weight bold -slant ' \
                  'roman -underline 0 -overstrike 0'
 
         # font12
@@ -42,7 +41,7 @@ class New_Toplevel:
         # configurações da tela principal
         root.geometry('1011x500')
         root.title('Hotel Rafa Said')
-        root.configure(background='darkgreen')
+        root.configure(background='cadetblue')
         root.configure(highlightbackground='#ffffff')
         root.configure(highlightcolor='black')
         root.wm_iconbitmap(r'icones/hotel.ico')
@@ -53,7 +52,7 @@ class New_Toplevel:
         self.Frame1.configure(relief=GROOVE)
         self.Frame1.configure(borderwidth='2')
         self.Frame1.configure(relief=GROOVE)
-        self.Frame1.configure(background='darkseagreen')
+        self.Frame1.configure(background='olive')
         self.Frame1.configure(highlightbackground='#ffffff')
         self.Frame1.configure(highlightcolor='black')
         self.Frame1.configure(width=995)
@@ -63,13 +62,13 @@ class New_Toplevel:
         self.Label1.place(relx=0.14, rely=0.12, height=46, width=442)
         self.Label1.configure(activebackground='#ffffff')
         self.Label1.configure(activeforeground='black')
-        self.Label1.configure(background='darkseagreen')
+        self.Label1.configure(background='olive')
         self.Label1.configure(disabledforeground='#bfbfbf')
         self.Label1.configure(font=font23)
         self.Label1.configure(foreground='#000000')
         self.Label1.configure(highlightbackground='#ffffff')
         self.Label1.configure(highlightcolor='black')
-        self.Label1.configure(text='Digite o nº quarto: ')
+        self.Label1.configure(text='Obter informação: ')
 
         # ========== ENTRYS ==========
         self.Entry1 = Entry(self.Frame1)
@@ -109,9 +108,7 @@ class New_Toplevel:
         self.Button1.configure(highlightbackground='#ffffff')
         self.Button1.configure(highlightcolor='black')
         self.Button1.configure(pady='0')
-        self.Button1.configure(text='OK')
-
-
+        self.Button1.configure(text='Imprimir')
 
         root.mainloop()
 
